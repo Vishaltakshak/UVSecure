@@ -20,12 +20,17 @@ const HeroSection = () => {
           Empowering organizations with cutting-edge cybersecurity consulting and solutions.
         </p>
         <div className="flex flex-wrap gap-4 mt-6">
+          <Link to ='/contact-us'>
           <button className="bg-[#7246FD] hover:bg-[#5f38d0] px-6 py-3 rounded-lg font-semibold transition shadow-[0_0_20px_#7246FD]/50">
             Get a Demo
           </button>
+
+          </Link>
+          <Link to='/about-us'>
           <button className="border border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-[#0A2D5F] transition">
             Learn More
           </button>
+          </Link>
         </div>
       </div>
 
