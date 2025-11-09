@@ -203,10 +203,11 @@ export const Header = () => {
                 )
               )}
             </ul>
-
-            <button className="mt-10 w-full bg-[#2563eb] text-white font-semibold py-3 rounded-xl hover:shadow-[0_0_20px_rgba(37,99,235,0.6)] transition-all">
-              Get in Touch →
-            </button>
+            <Link to='/contact-us'>
+              <button className="mt-10 w-full bg-[#2563eb] text-white font-semibold py-3 rounded-xl hover:shadow-[0_0_20px_rgba(37,99,235,0.6)] transition-all">
+                Get in Touch →
+              </button>
+           </Link>
           </motion.div>
         )}
       </AnimatePresence>
