@@ -46,7 +46,7 @@ const ContactPage = () => {
     name: "",
     email: "",
     company: "",
-    phoneno: "", 
+    PhoneNo: "", 
     message: "",
   });
   const [formState, setFormState] = useState("idle"); 
@@ -71,7 +71,7 @@ const ContactPage = () => {
       name: formData.name,
       email: formData.email,
       company: formData.company,
-      phoneno: formData.phoneno, 
+      PhoneNo: formData.phoneno, 
       message: formData.message,
       submittedAt: new Date().toISOString(),
     };
@@ -85,7 +85,7 @@ const ContactPage = () => {
         name: "",
         email: "",
         company: "",
-        phoneno: "",
+        PhoneNo: "",
         message: "",
       });
     } catch (error) {
@@ -103,7 +103,7 @@ const ContactPage = () => {
       }}
     >
       <section className="max-w-4xl mx-auto px-6 py-20 md:py-32">
-        {/* --- 1. TITLE --- */}
+        
         <motion.div
           className="text-center mb-12"
           variants={staggerContainer}
@@ -134,7 +134,7 @@ const ContactPage = () => {
           className="bg-white/5 backdrop-blur-md p-8 md:p-12 rounded-lg border border-white/10"
         >
           <form onSubmit={handleSubmit} className="space-y-6">
-            {/* Name & Email Row */}
+          
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <label
@@ -205,16 +205,14 @@ const ContactPage = () => {
                   type="tel"
                   name="phoneno"
                   id="phoneno"
-                  value={formData.phoneno}
+                  value={formData.PhoneNo}
                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-md bg-white/10 border border-white/20 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
                   placeholder="+(91) 123-4567"
                 />
               </div>
             </div>
-            {/* --- END OF MODIFICATION --- */}
-
-            {/* Message */}
+           
             <div>
               <label
                 htmlFor="message"
@@ -234,7 +232,7 @@ const ContactPage = () => {
               ></textarea>
             </div>
 
-            {/* Submit Button & Messages */}
+          
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
               <button
                 type="submit"
@@ -244,9 +242,9 @@ const ContactPage = () => {
                 {formState === "loading" ? "Sending..." : "Send Message"}
               </button>
 
-              {/* Submission Status Messages */}
+             
               {formState === "success" && (
-                <span className="text-green-400">
+                <span className="text-white">
                   Thank you! Your message has been sent.
                 </span>
               )}
