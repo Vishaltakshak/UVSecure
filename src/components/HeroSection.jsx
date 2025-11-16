@@ -17,7 +17,7 @@ const HeroSection = () => {
           Secure. Defend. <span className="text-[#7246FD]">Transform.</span>
         </h1>
         <p className="text-lg md:text-xl text-gray-200 max-w-md">
-          Empowering organizations with cutting-edge cybersecurity consulting and solutions.
+        Cyber solutions engineered to defend environments where <span className="text-[#9472ff] font-semibold"> Failure Is Not an Option.</span> 
         </p>
         <div className="flex flex-wrap gap-4 mt-6">
           <Link to ='/contact-us'>

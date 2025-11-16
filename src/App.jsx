@@ -7,6 +7,7 @@ import ProductPage from "./pages/ProductPage";
 import AboutPage from "./pages/AboutusPage";
 import ContactPage from "./pages/ContactPage";
 import ScrollToTop from "./utility/ScrollToTop";
+import FAQPage from "./pages/Faq";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/products/:productId" element={<ProductPage />} />
         <Route path="/about-us" element={<AboutPage/>}/>
         <Route path="/contact-us" element={<ContactPage/>}/>
+        <Route path="/faq" element={<FAQPage/>} />
       </Routes>
       <Footer/>
     </BrowserRouter>

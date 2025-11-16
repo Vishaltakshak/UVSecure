@@ -137,10 +137,10 @@ export default function HomeSections() {
    
     <div
       className="w-full min-h-screen text-slate-200 overflow-x-hidden"
-      style={{
-        background:
-          "radial-gradient(circle at top left, #7246FD 0%, #0A2D5F 70%)",
-      }}
+      // style={{
+      //   background:
+      //     "radial-gradient(circle at top left, #7246FD 0%, #0A2D5F 70%)",
+      // }}
     >
       
 

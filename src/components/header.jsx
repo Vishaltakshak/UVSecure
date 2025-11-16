@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -7,6 +7,24 @@ export const Header = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
   const [openSheetDropdown, setOpenSheetDropdown] = useState(null);
+  const hoverTimeout = useRef(null);
+
+  const handleMouseEnter = (link) => {
+  clearTimeout(hoverTimeout.current);
+  hoverTimeout.current = setTimeout(() => {
+    setOpenDropdown(link); // OPEN only
+  }, 200);
+};
+
+const handleMouseLeave = () => {
+  clearTimeout(hoverTimeout.current);
+  hoverTimeout.current = setTimeout(() => {
+    setOpenDropdown(null); // OPEN only
+  }, 200); // CLOSE immediately
+};
+
+
+
 
   const toggleDropdown = (menu) => {
     setOpenDropdown(openDropdown === menu ? null : menu);
@@ -47,18 +65,23 @@ export const Header = () => {
     <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-[#081B34]/90 border-b border-white/10 text-white">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
-        <Link to="/" className="flex flex-col font-semibold text-xl leading-tight">
-          <span>Cyber Security</span>
-          <span className="text-[12px] font-normal text-gray-300">Consulting</span>
-        </Link>
+       <div className="flex items-center  w-[15%]">
+          <img className="h-12 pr-2" src="/assests/logo.jpg" alt="" />
+
+          <Link to="/" className="flex flex-col font-semibold text-xl leading-tight">
+            <span>UVSecure</span>
+          </Link>
+        </div>
 
         <nav className="hidden md:flex space-x-8 text-[17px] font-medium">
           {links.map((link) =>
             link === "Products" || link === "Services" ? (
-              <div key={link} className="relative">
+              <div key={link} className="relative" onMouseEnter={() => handleMouseEnter(link)}
+                onMouseLeave={handleMouseLeave}>
                 <button
                   className="flex items-center gap-1 hover:text-[#AAB8FF] transition-all"
                   onClick={() => toggleDropdown(link)}
+                
                 >
                   {link}
                   <motion.span

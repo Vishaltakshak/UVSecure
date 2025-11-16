@@ -20,18 +20,26 @@ const Footer = () => {
           <h3 className="text-lg font-semibold text-white mb-3">Quick Links</h3>
           <ul className="space-y-2">
             <li><a href="/" className="hover:text-[#7246FD] transition">Home</a></li>
-            <li><a href="" className="hover:text-[#7246FD] transition">Services</a></li>
             <li><a href="/about-us" className="hover:text-[#7246FD] transition">About Us</a></li>
             <li><a href="/contact-us" className="hover:text-[#7246FD] transition">Contact</a></li>
+            <li><a href="/faq" className="hover:text-[#7246FD] transition">FAQ</a></li>
           </ul>
         </div>
 
         {/* Contact Info */}
         <div>
           <h3 className="text-lg font-semibold text-white mb-3">Contact Us</h3>
-          <p className="text-gray-400">📞 +91 98765 43210</p>
-          <p className="text-gray-400">✉️ contact@cyberconsults.com</p>
-          <p className="text-gray-400 mt-2">📍 Bengaluru, India</p>
+          <p className="text-gray-400">
+            <a href="tel:+918826532520" className="text-gray-400 hover:text-gray-200">
+              📞 +91 88265 32520
+            </a>
+          </p>
+          <p className="text-gray-400">
+            <a href="mailto:dhruvibansal1302@gmail.com" className="text-gray-400 hover:text-gray-200">
+              ✉️ dhruvibansal1302@gmail.com
+            </a>
+          </p>
+          <p className="text-gray-400 mt-2">📍 Delhi, India</p>
         </div>
       </div>
 
