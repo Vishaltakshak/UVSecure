@@ -129,7 +129,7 @@ export default function ServiceSection() {
                   }}
                   className="mt-4 px-4 py-2 rounded-lg bg-[#2563eb] transition-all font-semibold text-sm"
                 >
-                  {active === cat.id ? "Hide Products" : "View Products"}
+                  {active === cat.id ? "Hide Services" : "View Services"}
                 </button>
 
                 {/* Expand Section */}

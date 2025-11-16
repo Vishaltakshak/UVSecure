@@ -1,3 +1,4 @@
+import { Mail, Phone, MapPin } from "lucide-react";
 import React from "react";
 
 const Footer = () => {
@@ -8,7 +9,7 @@ const Footer = () => {
         
        
         <div className="flex mr-4">
-          <img src="/assests/logo.jpg" className="h-[60%] w-[50%] pr-4" alt="" />
+          <img src="/assests/logo.png" className="h-[60%] w-[50%] pr-4" alt="" />
           <div>
 
             <h2  className="text-2xl font-bold text-white mb-4">UVSecure</h2>
@@ -35,17 +36,19 @@ const Footer = () => {
         {/* Contact Info */}
         <div>
           <h3 className="text-lg font-semibold text-white mb-3">Contact Us</h3>
-          <p className="text-gray-400">
+          <p className="text-gray-400 flex items-center gap-2">
+              <Phone size={18} />
             <a href="tel:+918826532520" className="text-gray-400 hover:text-gray-200">
-              📞 +91 88265 32520
+              +91 88265 32520
             </a>
           </p>
-          <p className="text-gray-400">
+          <p className="text-gray-400 flex items-center gap-2">
+              <Mail size={18} />
             <a href="mailto:info.uvsecure@gmail.com" className="text-gray-400 hover:text-gray-200">
-              ✉️ info.uvsecure@gmail.com
+               info.uvsecure@gmail.com
             </a>
           </p>
-          <p className="text-gray-400 mt-2">📍 Delhi, India</p>
+          <p className="text-gray-400 mt-2 flex items-center gap-2"> <MapPin size={18} /> Delhi, India</p>
         </div>
       </div>
 

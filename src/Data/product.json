@@ -1,12 +1,12 @@
 {
   "products": [
     {
-      "id": "phish-e",
-      "title": "Phish-E",
+      "id": "Phishing Protection",
+      "title": "Phishing Protection",
       "tagline": "Complete Phish Operations to Counter Sophisticated Threats",
       "hero": {
         "heading": "AI-Driven Phishing Defense Platform",
-        "subheading": "Phish-E™ provides proactive deterrence against state-sponsored and sophisticated threat actors through our unique PhishOps model — combining training, threat scanning, and automated incident response.",
+        "subheading": "Phishing Protection provides proactive deterrence against state-sponsored and sophisticated threat actors through our unique PhishOps model — combining training, threat scanning, and automated incident response.",
         "cta": "Schedule a Demo",
         "image": "/assests/product/phisheHero.webp"
       },
@@ -14,7 +14,7 @@
         {
           "heading": "AI-Powered Threat Simulation",
           "paragraphs": [
-            "Attackers don’t just use words — they use emotions. Phish-E’s AI analyzes sentiment and intent behind phishing emails to neutralize emotional manipulation before it compromises your team."
+            "Attackers don’t just use words — they use emotions. Phishing Protection’s AI analyzes sentiment and intent behind phishing emails to neutralize emotional manipulation before it compromises your team."
           ],
           "image": "/assests/product/phishe1.png",
           "layoutReverse": false
@@ -93,20 +93,20 @@
       ]
     },
     {
-      "id": "phishiq",
-      "title": "PhishIQ",
+      "id": "Phishing Resilience Platform",
+      "title": "Phishing Resilience Platform",
       "tagline": "Human-Centric Phishing Intelligence",
       "hero": {
         "heading": "Train, Test, and Transform Your Workforce",
-        "subheading": "PhishIQ™ empowers employees to identify and report phishing attempts in real time — turning your workforce into your first line of defense.",
+        "subheading": "Phishing Resilience Platform™ empowers employees to identify and report phishing attempts in real time — turning your workforce into your first line of defense.",
         "cta": "Book a Demo",
         "image": "/assests/product/phishiq1.jpg"
       },
       "sections": [
         {
-          "heading": "Why PhishIQ?",
+          "heading": "Why Phishing Resilience Platform?",
           "paragraphs": [
-            "PhishIQ™ brings behavioral psychology and gamified simulations to strengthen human defense against phishing. Track progress, simulate real-world attacks, and enhance employee awareness with interactive campaigns."
+            "Phishing Resilience Platform™ brings behavioral psychology and gamified simulations to strengthen human defense against phishing. Track progress, simulate real-world attacks, and enhance employee awareness with interactive campaigns."
           ],
           "image": "/assests/product/phishIq2.png",
           "layoutReverse": false

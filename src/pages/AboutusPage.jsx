@@ -217,40 +217,52 @@ const AboutPage = () => {
         </motion.div>
       </section>
 
-      {/* FOOTER CTA */}
-      <section className="py-20 text-center max-w-4xl mx-auto px-6">
-        <motion.h2
-          variants={fadeInUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="text-3xl font-semibold text-white mb-4"
-        >
-          Let's Build a Secure Digital India Together
-        </motion.h2>
-        <motion.p
-          variants={fadeInUp}
-          className="text-lg text-slate-300 max-w-2xl mx-auto"
-        >
-          At UVSecure, we don't just deliver security—we build partnerships. Whether you're a startup, SME, or enterprise,
-          we're committed to safeguarding your digital future with world-class indigenous defense.
-        </motion.p>
-      </section>
-       <div className="max-w-[80%] pb-8 mb-8 mx-auto p-8 md:p-12 rounded-lg  bg-white/5 backdrop-blur-md border border-white/10 shadow-xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Are You Ready to Secure Your Organization?
-          </h2>
-          <p className="text-lg text-slate-300 max-w-2xl mb-8">
-            Our team of experts is ready to help you identify vulnerabilities
-            and build a resilient defense. Let's talk.
-          </p>
-          <Link
-            to="/contact-us" 
-            className="inline-block px-8 py-3 rounded-lg border border-white/30 bg-white/10 backdrop-blur-md text-white font-semibold shadow-lg transition-all duration-300 hover:bg-white/20 hover:border-white/50 hover:scale-105"
-          >
-            Get in Touch
-          </Link>
-        </div>
+          {/* FOOTER CTA */}
+          <div className="mx-auto">
+
+           <motion.h2
+            variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="text-3xl text-center font-semibold text-white "
+            >
+            Let's Build a Secure Digital India Together
+            </motion.h2>
+          </div>
+      <section className="pt-8 pb-20 mx-auto ">
+
+      <motion.p
+        variants={fadeInUp}
+        className="text-lg text-slate-300 w-[90%]  mx-auto"
+      >
+        At UVSecure, we don't just deliver security—we build partnerships. 
+        Whether you're a startup, SME, or enterprise, we're committed to 
+        safeguarding your digital future with world-class indigenous defense.
+      </motion.p>
+    </section>
+
+    {/* Contact CTA Box */}
+    <div className="max-w-4xl mx-auto pb-8 mb-20 p-8 md:p-12 rounded-xl bg-white/5 backdrop-blur-md border border-white/10 shadow-xl flex flex-col items-center">
+      <h2 className="text-4xl md:text-4xl font-bold text-white mb-4">
+        Ready to Strengthen Your Cyber Defenses?
+      </h2>
+
+      <p className="text-lg text-slate-300 mb-8 text-center leading-relaxed">
+        Partner with UVSecure to build a robust security foundation with indigenous solutions designed for Indian organizations.
+      </p>
+
+      <Link
+        to="/contact-us"
+        className="inline-block px-8 py-3 rounded-lg border border-white/30 bg-white/10 
+                   backdrop-blur-md text-white font-semibold shadow-lg 
+                   transition-all duration-300 hover:bg-white/20 
+                   hover:border-white/50 hover:scale-105"
+      >
+        Get in Touch
+      </Link>
+    </div>
+
     </div>
   );
 };

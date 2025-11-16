@@ -35,8 +35,8 @@ const handleMouseLeave = () => {
   };
 
   const products = [
-    { name: "Phish-E", id: "phish-e" },
-    { name: "Phishiq", id: "phishiq" },
+    { name: "Phishing Protection", id: "Phishing Protection" },
+    { name: "Phishing Resilience Platform", id: "Phishing Resilience Platform" },
     { name: "Cloud Security", id: "cloud-security" },
     { name: "GRC", id: "grc-platform" },
     { name: "Inventory Management", id: "inventory-management" },
@@ -66,7 +66,7 @@ const handleMouseLeave = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
        <div className="flex items-center  w-[15%]">
-          <img className="h-12 pr-2" src="/assests/logo.jpg" alt="" />
+          <img className="h-12 w-16 pr-2 scale-150 bg-transparent" src="/assests/logo.png" alt="" />
 
           <Link to="/" className="flex flex-col font-semibold text-xl leading-tight">
             <span>UVSecure</span>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown } from "lucide-react";
-
+import { Calendar, ChevronDown, MessageSquare } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 const faqData = {
   "General Questions": [
     {
@@ -184,12 +184,12 @@ export default function FAQPage() {
             We're here to support your security journey. Reach out anytime.
           </p>
           <ul className="space-y-2 text-slate-200">
-            <li> <a href="mailto:info.uvsecure@gmail.com">✉️ Email: info.uvsecure@gmail.com</a>  </li>
-            <li> <a href="tel:+918826532520" className="text-gray-400 hover:text-gray-200">
-              📞 +91 88265 32520
+            <li> <a href="mailto:info.uvsecure@gmail.com" className="flex items-center gap-2"> <Mail size={18}/> Email: info.uvsecure@gmail.com</a>  </li>
+            <li> <a href="tel:+918826532520" className=" flex items-center gap-2">
+              <Phone size={18}/> +91 88265 32520
             </a></li>
-            <li>💬 Live Chat: Available on our website</li>
-            <li>📅 Schedule a Call: Book a consultation</li>
+            <li> <div className="flex items-center gap-2"><MessageSquare size={18}/> Live Chat: Available on our website</div> </li>
+            <li> <div className="flex items-center gap-2"><Calendar size={18}/> Schedule a Call: Book a consultation</div> </li>
           </ul>
         </div>
       </section>

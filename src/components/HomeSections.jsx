@@ -136,7 +136,7 @@ export default function HomeSections() {
   return (
    
     <div
-      className="w-full min-h-screen text-slate-200 overflow-x-hidden"
+      className="w-full min-h-screen text-slate-200 bg-[#020617] overflow-x-hidden"
       // style={{
       //   background:
       //     "radial-gradient(circle at top left, #7246FD 0%, #0A2D5F 70%)",

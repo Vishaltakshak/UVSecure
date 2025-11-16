@@ -593,7 +593,7 @@
       "title": "Sensitive Data Leakage Monitoring",
       "tagline": "Detect unauthorized data exfiltration across cloud, endpoint, and network environments to prevent breaches.",
       "hero": {
-        "img": "/assests/services/redteamhero.jpg"
+        "img": "/assests/services/redteamHero.jpg"
       },
       "sections": [
         {
@@ -604,7 +604,7 @@
             "Continuous monitoring of critical assets",
             "Advanced exfiltration detection"
           ],
-          "img": "/assets/services/sensitive1.webp"
+          "img": "/assests/services/sesitive1.webp"
         },
         {
           "title": "Cloud & Endpoint Protection",
@@ -614,7 +614,7 @@
             "Cross-platform visibility",
             "Automated incident alerts"
           ],
-          "img": "/assets/services/sensitive2.webp"
+          "img": "/assests/services/sesitive2.webp"
         },
         {
           "title": "Regulatory Compliance Assurance",
@@ -624,7 +624,7 @@
             "Continuous auditing and reporting",
             "Policy-driven data control"
           ],
-          "img": "/assets/services/sensitive3.webp"
+          "img": "/assests/services/sesitive3.webp"
         },
         {
           "title": "Data Discovery & Classification",
@@ -634,7 +634,7 @@
             "Discovery of shadow data",
             "Dynamic labeling and tagging"
           ],
-          "img": "/assets/services/sensitive4.webp"
+          "img": "/assests/services/sesitive4.webp"
         },
         {
           "title": "Threat Response & Incident Management",
@@ -644,7 +644,7 @@
             "Detailed forensic trail",
             "Automated containment triggers"
           ],
-          "img": "/assets/services/sensitive5.webp"
+           "img": "/assests/services/sesitive5.webp"
         }
       ],
       "methodology": {

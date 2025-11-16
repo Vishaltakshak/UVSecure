@@ -273,11 +273,10 @@ const ServicePage = () => {
             >
               <div className="p-8 md:p-12 rounded-lg bg-white/5 backdrop-blur-md border border-white/10 shadow-xl">
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                  Are You Ready to Secure Your Organization?
+                 Ready to Strengthen Your Cyber Defenses?
                 </h2>
                 <p className="text-lg text-slate-300 max-w-2xl mx-auto mb-8">
-                  Our team of experts is ready to help you identify vulnerabilities
-                  and build a resilient defense. Let's talk.
+                  Partner with UVSecure to build a robust security foundation with indigenous solutions designed for Indian organizations.
                 </p>
                 <Link
                   to="/contact-us" 

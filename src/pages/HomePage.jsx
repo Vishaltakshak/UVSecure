@@ -11,14 +11,14 @@ export default function HomePage() {
      <div style={{
         background: "radial-gradient(circle at top left, #4b2fb3 0%, #07101eff 70%)",
       }}>
-        <HomeSections/>
         <WhoWeHelp/>
      </div>
      <div style={{
-        background: "radial-gradient(circle at top left,  #0f1d34ff 0% #020617 60%)",
+       background: "radial-gradient(circle at top left,  #0f1d34ff 0% #020617 60%)",
       }}>
         <CyberCategoryGrid/>
         <ServiceSection/>
+        <HomeSections/>
       </div>
     </div>
   );
